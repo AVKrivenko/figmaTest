@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +7,383 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(./assests/back.jpg) no-repeat ;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+html{
+
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;  
+   -o-background-size: cover;
+  background-size: cover; */
+  
+}
+
+.container{
+ width: 1140px;
+ font-family: 'Inter', sans-serif;
+ margin: 0 auto;
+
+}
+.header{
+ color:#E4E5EA;
+ display: flex;
+ height: 73px;
+
+
+
+}
+.logo{
+  margin-top: 46px;
+}
+.logo-text{
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 10px;
+  
+}
+.menu{
+  display: flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: space-between;
+  width: 503px;
+  margin-left:52px;
+  margin-right: 137px;
+  margin-top: 34px;
+  cursor: pointer;
+  
+}
+.contacts{
+  margin-top: 34px;
+  display: flex;
+  cursor: pointer;
+}
+.contacts-icons{
+  margin-top: 14px;
+  margin-left: 47px;
+}
+.contacts-icons img{
+  margin-right: 20px;
+}
+.section{
+  color:#E4E5EA;
+  display: flex;
+  
+  justify-content: space-between;
+}
+.section-right{
+  margin-top: 76px;
+  animation: animate 2s ease-out forwards;
+}
+.right_text-large{
+  font-weight: 400;
+  font-size: 48px;
+  width: 362;
+  text-align: left;
+  margin-bottom: 0;
+  
+}
+.right_text-large span{
+  font-size: 48px;
+  font-weight: 900;
+  background: linear-gradient(45deg, rgba(252, 176, 69, 1) 33%,rgba(253, 124, 93, 1) 66%,rgba(255, 63, 120, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  
+
+}
+.right_text-mini{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: left;
+  margin: 30px 0 0 0;
+  
+}
+.section-left{
+  animation: animate_left 2s ease-out forwards;
+  
+}
+.left_text{
+  font-size: 18px;
+  font-weight: 500;
+  text-align: right;
+  margin: 140px 0 0 0;
+
+}
+.left_text span{
+  text-transform: uppercase;
+  font-weight:700 ;
+  background: linear-gradient(45deg,rgba(252, 176, 69, 1) 30%,rgba(252, 107, 50, 1) 70%,rgba(253, 29, 29, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing:0.75px;
+ 
+
+}
+.left_grids{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: right;
+  margin: 40px 0 0 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+.left_grids p{
+  margin: 6px 0 30px 46px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+ text-transform: lowercase;
+}
+button{
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 500;
+  font-size: 16px;
+  width: 262px;
+  height: 61px;
+  background: #4077F3;
+  color: #E4E5EA;
+   cursor: pointer;
+   margin: 33px 0 0 100px;
+   transition:  500ms linear;     
+}
+button:hover{
+  color: #4077F3;
+  background-color: #E4E5EA;
+  
+}
+.foother{
+  display: flex;
+  color: #E4E5EA;
+  margin-top: 124px;
+  font-size: 400;
+  font-size: 16px;
+}
+.foother span{
+  font-weight: 700;
+  font-size: 14px;
+  color: #656566;
+  text-transform: uppercase;
+}
+.foother-about{
+  text-align: left;
+  margin-right: 96px;
+  width: 210px;
+ 
+}
+
+.foother-menu{
+  text-align: left;
+}
+.part1{
+  margin-right: 52px;
+  width: 150px;
+  margin-bottom: 0;
+}
+.part2{
+  width: 222px;
+}
+.foother-menu-widgets{
+  display: flex;
+  
+}
+.foother-contacts{
+  text-align: right;
+ margin-left:140px;
+ font-size: 16px;
+ font-weight: 400;
+
+}
+.foother-down{
+  color: #E4E5EA;
+  margin-left: 880px;
+  margin-bottom: 20px;
+  
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: right;
+}
+.foother-down span{
+  text-decoration: underline;
+  
+}
+.foother-contacts .contacts-icons{
+text-align: right;
+margin: 0;
+}
+
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes animate_left {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media(max-width:348px) {
+  html{
+   background:none;
+    
+    
+ 
+  }
+  body{
+   
+    background:#0E1014;
+  }
+  .App{
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .container{
+    width: 272px; 
+    margin: 0 0;
+    
+   
+  
+   
+
+  }
+
+
+  .menu{
+    font-size: 12px;
+  font-weight: 500;
+  margin: 20px 4px 20px 16px;
+  width: 195px;
+  text-transform: uppercase;
+  cursor: pointer;
+  }
+  .menu p{
+    margin-right: 16px;
+  }
+ .hidden{
+    display:none;
+ }
+  .logo ,.contacts {
+    display: none;
+  }
+  .section{
+    background: url(./assests/bg_mb.jpg) no-repeat center;
+    width: 320px;
+    height: 451px;
+    display: inline-block;
+  }
+  .section-right {
+    margin-top: 0;}
+  .right_text-large{
+    font-size: 36px;
+    margin-left: 14px;
+    margin-top: 40px;
+  }
+  .right_text-large span{
+    font-size: 36px;
+   
+  }
+  .right_text-mini{
+    font-size: 18px;
+    margin: 15px 0 0 14px;
+  }
+  .section-left{
+    
+  }
+  .left_text{
+ text-align: left;
+ margin: 45px 0 0 14px ;
+ font-size: 18px;
+ 
+  }
+  .left_text span{
+    text-transform: lowercase;
+  }
+  .grids{
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-left: 31px;
+    display: flex;
+    margin-bottom: 14px;
+  }
+  .left_grids{
+    margin-top: 20px 
+  }
+ .grids p{
+  display: none;
+  
+ }
+ .grids-line{
+  background: #E4E5EA;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+ }
+ button{
+  display: none;
+ }
+ .foother{
+  display: block;
+  color: #E4E5EA;
+  margin-top: 45px;
+  margin-left: 16px;
+  font-size: 14px;
+}
+.foother span{
+  font-size: 12px;
+  color: #656566;
+  text-transform: uppercase;
+}
+.foother-menu{
+  margin:30px 0 0 0 ;
+}
+.foother-contacts{
+  text-align: left;
+  margin:30px 0 0 0 ;
+  width: 300px;
+}
+.foother-contacts .contacts-icons{
+  text-align: left;;
+}
+}
+
